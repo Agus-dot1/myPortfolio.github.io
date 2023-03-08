@@ -1,0 +1,282 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.background-image {
+    background-image: url('images/background-image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 110vh;
+    width: 100%;
+}
+
+
+li,
+a,
+p {
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    color: #D3D3D3;
+    text-decoration: none;
+}
+
+
+
+.nav-links {
+    list-style: none;
+    margin-right: 40px;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.nav-links li a {
+    transition: all 0.3s;
+    font-weight: bold;
+}
+
+
+
+.nav-links li a:hover {
+    color: #A4161A;
+}
+
+
+header {
+    display: flex;
+    align-items: left;
+    padding: 20px 3%;
+}
+
+.lol {
+    display: flex;
+    justify-content: flex-end;
+    align-items: right;
+
+}
+
+i {
+    font-size: 28px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+i:hover {
+    color: #D3D3D3;
+}
+
+.false-h1 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    letter-spacing: 0.1em;
+    color: #D3D3D3;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    margin-right: auto;
+    transition: all 0.3s;
+}
+
+.false-h1:hover {
+    color: #B1A7A6;
+}
+
+
+.sub-title {
+    font-weight: bold;
+    font-size: 40px;
+    letter-spacing: 0.1em;
+    color: #D3D3D3;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    border-bottom: 1px solid #D3D3D3;
+    height: fit-content;
+}
+
+button {
+    background: transparent;
+    border: none;
+}
+
+.title-text {
+    font-family: 'Montserrat', sans-serif;
+    color: #D3D3D3;
+    font-size: 6rem;
+    vertical-align: baseline;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    margin-bottom: 1.6rem;
+    overflow: hidden;
+    text-shadow: 0.5px 0.5px #fff;
+}
+
+.title-comp {
+    display: block;
+    position: absolute;
+    top: 35%;
+    margin-left: 14%;
+    line-height: 1;
+}
+
+.description {
+    font-size: 1.5rem;
+    margin-left: 17px;
+}
+
+
+.projects {
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.title-centerer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.project-images {
+    width: 500px;
+    height: 250px;
+    display: block;
+    filter: grayscale(100%);
+}
+
+img {
+    border-radius: 10px;
+    transition: all 0.3s, transform 0.1s;
+}
+
+.project-images:hover {
+    padding: 2px;
+    border: 1px solid #fff;
+    transform: translate(-10px, -10px);
+    filter: grayscale(0%);
+}
+
+
+
+.project-navs {
+    text-align: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 500px));
+    row-gap: 20px;
+    column-gap: 30px;
+}
+
+.project-desc {
+    font-size: 0.9rem;
+    margin-top: 4px;
+}
+
+
+@media (max-width: 768px) {
+    .title-text {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+        left: 20;
+    }
+
+    .title-comp {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        top: 25%;
+        margin-left: 19%;
+    }
+
+    .lol {
+        position: absolute;
+        right: 0;
+        margin-right:  20px;
+    }
+
+    .nav-links li {
+        display: inline-block;
+        padding: 0 3px;
+    }
+
+    header {
+        padding: 20px;
+    }
+
+    .false-h1 {
+        display: none;
+    }
+
+    .description {
+        font-size: 0.8rem;
+        margin-left: 2%;
+    }
+
+    body {
+        width: 100%;
+    }
+
+
+
+    .background-image {
+        background-image: url('images/background-image.jpg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        height: 110vh;
+    }
+
+    i {
+        font-size: 1.4em;
+        display: block;
+        margin-right: 10px;
+    }
+
+    .project-images {
+        width: 280px;
+        height: 160px;
+    }
+
+    .project-navs {
+        grid-template-columns: repeat(auto-fill, minmax(160px, 280px));
+    }
+
+    .projects {
+        height: 210vh;
+    }
+
+
+
+}
+
+@media (max-width: 1576px){
+    .projects {
+        margin-top: 0;
+        height: 120vh;
+    }
+}
+
+
+@media (max-width: 1046px){
+    .title-comp {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        top: 25%;
+        margin-left: 19%;
+    }
+
+    .projects {
+        margin-top: 0;
+        height: 220vh;
+    }
+}
